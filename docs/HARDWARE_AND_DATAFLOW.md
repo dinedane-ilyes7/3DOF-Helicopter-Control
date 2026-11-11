@@ -1,5 +1,7 @@
 # Hardware and communication architecture
 
+For **exact component specifications and wiring**, see [component inventory](COMPONENTS_AND_SPECIFICATIONS.md) and [detailed signal/terminal mapping and wiring schematic](WIRING_SCHEMATIC.md).
+
 This document describes the project's specific experimental hardware configuration. It is **not** a ready-to-flash safety-validated implementation.
 
 ## System overview
