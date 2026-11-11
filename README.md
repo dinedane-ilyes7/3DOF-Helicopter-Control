@@ -24,7 +24,7 @@ This recording shows the physical helicopter prototype in operation. The exact c
 
 | Area | Technologies / methods |
 | --- | --- |
-| Hardware | Three-DOF helicopter frame, twin BLDC motors, ESCs, quadrature encoders |
+| Hardware | STM32F429 Discovery, 2 × 750 KV BLDC motors, 2 × 50 A ESCs, 3 × OMRON E6B2-CWZ6C 1000 P/R encoders, Graupner 11×5 propellers |
 | Embedded systems | STM32F4, PWM, UART, hardware timer peripherals |
 | Modeling and control | State-space modeling, system identification, LQR, LQI, PID |
 | Engineering software | MATLAB, Simulink, LabVIEW, Python, Streamlit |
@@ -43,6 +43,8 @@ The thesis documents the modeling and experimental comparison of controllers for
 - [Python smoke tests](tests/test_labview_hybrid_controller.py) — reset and PWM-range checks.
 - [Software notes](docs/SOFTWARE_NOTES.md) — differences between software versions.
 - [Hardware/data-flow notes](docs/HARDWARE_AND_DATAFLOW.md) — STM32 pin mapping and communication.
+- [**Wiring schematic and connector pinouts**](docs/WIRING_SCHEMATIC.md) — visual system connections, STM32 pins, interface-board connectors and ribbon cable.
+- [**Component specifications / BOM**](docs/COMPONENTS_AND_SPECIFICATIONS.md) — encoder models, motor KV, ESC current rating, supply and propellers.
 - [Source inventory](docs/SOURCE_INVENTORY.md) — identifies published and unpublished original artifacts.
 - [Hardware demonstration video](media/helicopter_demo.mp4) — video of the real prototype.
 - [Experimental results](docs/EXPERIMENTAL_RESULTS.md) — thesis-measured step responses, model validation and disturbance rejection.
