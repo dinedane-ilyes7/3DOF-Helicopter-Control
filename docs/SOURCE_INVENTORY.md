@@ -7,6 +7,7 @@ The uploaded `3_DOF.zip` was organized into a local GitHub-ready project bundle 
 | `helicopter_stm32_full.ino` | `firmware/stm32/helicopter_stm32_full/helicopter_stm32_full.ino` | Published |
 | `LabView.txt` | `software/python/labview_hybrid_controller.py` | Published as Python, minor line-ending normalization |
 | `Python_HMI.py` | `software/python/Python_HMI.py` | In local prepared package, not yet on GitHub |
+| `lab-pid.vi` (new upload) | `software/labview/lab-pid.vi` | Published as original binary; autotuning functionality not independently verified |
 | `LabView_python.vi` | `software/labview/LabView_python.vi` | In local prepared package, not yet on GitHub |
 | `Corrected_final_thesis.pdf` | `docs/Masters_Thesis_3DOF_Helicopter.pdf` | In local prepared package, not yet on GitHub |
 | Thesis PowerPoint | `docs/Thesis_Presentation.pptx` | In local prepared package, not yet on GitHub |
