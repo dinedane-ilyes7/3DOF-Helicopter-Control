@@ -4,7 +4,7 @@
 
 A small-scale three-degree-of-freedom helicopter designed and studied for **dynamic modeling, system identification, optimal control, and real-time implementation**. The experimental platform controls **pitch, elevation, and travel** with two brushless motors, encoder feedback, and an STM32 microcontroller.
 
-> **Repository status:** STM32 firmware, LabVIEW-connected Python controller, technical documentation, automated smoke tests, and a real-hardware demonstration video are published. The separate Streamlit HMI, LabVIEW VI, thesis, and slides are not yet available here.
+> **Repository status:** STM32 firmware, LabVIEW-connected Python controller, technical documentation, automated smoke tests, and a real-hardware demonstration video are published. An additional LabVIEW PID VI is now published. The separate Streamlit HMI, original LabVIEW/Python integration VI, thesis, and slides are not yet available here.
 
 ## 🎥 Video demonstration
 
@@ -38,6 +38,8 @@ The thesis documents the modeling and experimental comparison of controllers for
 
 - [STM32 firmware](firmware/stm32/helicopter_stm32_full/helicopter_stm32_full.ino) — quadrature encoders, PWM motor commands and UART telemetry.
 - [Python LabVIEW-connected controller](software/python/labview_hybrid_controller.py) — experimental hybrid controller.
+- [LabVIEW PID VI](software/labview/lab-pid.vi) — original PID-related LabVIEW instrument (autotuning not yet verified from block diagram).
+- [LabVIEW PID notes](software/labview/README.md) — dependencies and verification steps.
 - [Python smoke tests](tests/test_labview_hybrid_controller.py) — reset and PWM-range checks.
 - [Software notes](docs/SOFTWARE_NOTES.md) — differences between software versions.
 - [Hardware/data-flow notes](docs/HARDWARE_AND_DATAFLOW.md) — STM32 pin mapping and communication.
@@ -64,7 +66,8 @@ GitHub Actions also runs the Python smoke tests on code changes. These are **not
 - [x] Confirm co-author permission for collaborative materials; retain attribution and review remaining files for privacy
 - [x] Publish firmware, hybrid controller, initial documentation and smoke tests
 - [x] Publish demonstration video
-- [ ] Publish remaining reviewed HMI, LabVIEW VI, thesis and presentation files
+- [x] Publish the separate LabVIEW PID VI
+- [ ] Publish remaining reviewed HMI, original LabVIEW/Python integration VI, thesis and presentation files
 - [ ] Add still images, schematic illustrations and verified controller labels to the demo
 - [ ] Document reproducible setup and validated hardware configurations
 
