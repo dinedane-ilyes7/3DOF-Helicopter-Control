@@ -4,7 +4,13 @@
 
 A small-scale three-degree-of-freedom helicopter designed and studied for **dynamic modeling, system identification, optimal control, and real-time implementation**. The experimental platform controls **pitch, elevation, and travel** with two brushless motors, encoder feedback, and an STM32 microcontroller.
 
-> **Repository status:** The STM32 firmware, LabVIEW-connected Python controller, hardware notes and smoke tests are published. The separate Streamlit HMI, LabVIEW VI, thesis, slides and demonstration video are still held in the prepared local project package and **not yet published here**.
+> **Repository status:** STM32 firmware, LabVIEW-connected Python controller, technical documentation, automated smoke tests, and a real-hardware demonstration video are published. The separate Streamlit HMI, LabVIEW VI, thesis, and slides are not yet available here.
+
+## 🎥 Video demonstration
+
+[**Watch the experimental 3-DOF helicopter demonstration (MP4)**](media/helicopter_demo.mp4)
+
+This recording shows the physical helicopter prototype in operation. The exact controller version active during the recording has not been independently verified; it should not be treated as a demonstration of every controller variant documented in the thesis.
 
 ## Project objectives
 
@@ -36,6 +42,7 @@ The thesis documents the modeling and experimental comparison of controllers for
 - [Software notes](docs/SOFTWARE_NOTES.md) — differences between software versions.
 - [Hardware/data-flow notes](docs/HARDWARE_AND_DATAFLOW.md) — STM32 pin mapping and communication.
 - [Source inventory](docs/SOURCE_INVENTORY.md) — identifies published and unpublished original artifacts.
+- [Hardware demonstration video](media/helicopter_demo.mp4) — video of the real prototype.
 - [Experimental results](docs/EXPERIMENTAL_RESULTS.md) — thesis-measured step responses, model validation and disturbance rejection.
 - [Publication checklist](docs/PUBLICATION_CHECKLIST.md) — remaining review items.
 
@@ -56,8 +63,9 @@ GitHub Actions also runs the Python smoke tests on code changes. These are **not
 - [x] Create repository and technical overview
 - [x] Confirm co-author permission for collaborative materials; retain attribution and review remaining files for privacy
 - [x] Publish firmware, hybrid controller, initial documentation and smoke tests
-- [ ] Publish remaining reviewed HMI, LabVIEW, thesis and demonstration files
-- [ ] Add diagrams and demonstrations approved for public distribution
+- [x] Publish demonstration video
+- [ ] Publish remaining reviewed HMI, LabVIEW VI, thesis and presentation files
+- [ ] Add still images, schematic illustrations and verified controller labels to the demo
 - [ ] Document reproducible setup and validated hardware configurations
 
 ## Credits
