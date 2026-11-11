@@ -1,0 +1,6 @@
+# Streamlit monitoring interface
+streamlit>=1.31,<2
+pyserial>=3.5,<4
+
+# Python controller used by LabVIEW integration
+numpy>=1.24,<3
