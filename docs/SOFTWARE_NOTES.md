@@ -50,3 +50,12 @@ These are **hardware-free smoke tests only**; they do not prove physical stabili
 - Reproducible embedded toolchain configuration and complete electrical schematic
 
 These would be valuable future additions.
+
+## 6. Additional LQI Python Node variants (recovered separately)
+
+Two additional files supplied by the thesis author have now been preserved under [`software/python/experimental_lqi/`](../software/python/experimental_lqi/):
+
+- `lqi_controller.py` — fixed 10 ms LQI controller, with direct derivatives and no integrator limit.
+- `compute_pwm.py` — derivative filtering and integral clamping, using measured wall-clock steps and smaller output corrections.
+
+See the [comparison](../software/python/experimental_lqi/README.md) for differences and assumptions. Their chronological order and the exact hardware experiments using each version are **not verified**. A fixed-output LabVIEW Node test, an invalid terminal-command snippet and an empty placeholder were also supplied, but excluded from the main repository because they are not controller implementations.
