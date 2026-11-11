@@ -1,0 +1,26 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+
+# Local operating system / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated runtime logs
+helicopter_data.csv
+*.log
+logs/
+
+# Build and tooling outputs
+build/
+dist/
+*.elf
+*.bin
+*.hex
