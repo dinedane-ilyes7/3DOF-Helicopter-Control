@@ -36,6 +36,7 @@ The thesis documents the modeling and experimental comparison of controllers for
 - [Software notes](docs/SOFTWARE_NOTES.md) — differences between software versions.
 - [Hardware/data-flow notes](docs/HARDWARE_AND_DATAFLOW.md) — STM32 pin mapping and communication.
 - [Source inventory](docs/SOURCE_INVENTORY.md) — identifies published and unpublished original artifacts.
+- [Experimental results](docs/EXPERIMENTAL_RESULTS.md) — thesis-measured step responses, model validation and disturbance rejection.
 - [Publication checklist](docs/PUBLICATION_CHECKLIST.md) — remaining review items.
 
 ### Quick test
