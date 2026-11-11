@@ -38,6 +38,9 @@ The thesis documents the modeling and experimental comparison of controllers for
 
 - [STM32 firmware](firmware/stm32/helicopter_stm32_full/helicopter_stm32_full.ino) — quadrature encoders, PWM motor commands and UART telemetry.
 - [Python LabVIEW-connected controller](software/python/labview_hybrid_controller.py) — experimental hybrid controller.
+- [**Original fixed-step LQI controller**](software/python/experimental_lqi/lqi_controller.py) — 10 ms fixed-step control and direct PWM mixing.
+- [**Filtered LQI controller**](software/python/experimental_lqi/compute_pwm.py) — derivative filtering and limited PWM corrections.
+- [**LQI variant comparison**](software/python/experimental_lqi/README.md) — documentation of both historical versions and known limitations.
 - [LabVIEW PID VI](software/labview/lab-pid.vi) — original PID-related LabVIEW instrument (autotuning not yet verified from block diagram).
 - [LabVIEW PID notes](software/labview/README.md) — dependencies and verification steps.
 - [Python smoke tests](tests/test_labview_hybrid_controller.py) — reset and PWM-range checks.
